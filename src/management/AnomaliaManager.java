@@ -47,10 +47,14 @@ public class AnomaliaManager {
             ConsoleUtils.limpiarBuffer();
 
             switch (opcion) {
-                case 1 -> registrarAnomalia();
-                case 2 -> mostrarAnomalias();
-                case 3 -> continuar = false;
-                default -> System.out.println("Opción no válida.");
+                case 1 : registrarAnomalia();
+                break;
+                case 2 : mostrarAnomalias();
+                break;
+                case 3 : continuar = false;
+                break;
+                default : System.out.println("Opción no válida.");
+                break;
             }
         }
     }
